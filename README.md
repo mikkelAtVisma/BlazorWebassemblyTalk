@@ -8,3 +8,4 @@
 
 4. Open the SatelliteSimulator project
 5. In the app.razor file, we have a template logic for a satellite simulator.
+6. Fill in the remaining steps (look into comments) until you've created a simulation of the solar system!
