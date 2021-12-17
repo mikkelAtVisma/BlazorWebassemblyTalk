@@ -4,7 +4,7 @@
 <canvas @ref="canvasElem"></canvas>
 
 @code {
-    [DllImport("librustqr")]
+
     static extern void generate_qr_code(string contents, byte[] buffer, int bufferLength, out int width, out int height);
 
     [Parameter] public string Value { get; set; } = string.Empty;

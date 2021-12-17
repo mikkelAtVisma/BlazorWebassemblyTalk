@@ -21,12 +21,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
 
-	<!-- There's no WebAssembly in this application! It's all .NET Core and native code, including the Blazor part. -->
-	<!-- So, since this is a Windows app, it needs a Windows binary of the Rust library -->
-	<Content Condition="'$(OS)' == 'Windows_NT'" Include="..\rustqr\target\x86_64-pc-windows-msvc\debug\rustqr.dll">
-      <Link>librustqr.dll</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>
